@@ -1,4 +1,5 @@
 import React from "react";
+import UserSelect from "./UserSelect";
 
 class App extends React.Component {
   state = { language: "english" };
@@ -20,7 +21,7 @@ class App extends React.Component {
             className="flag nl"
             onClick={() => this.onLanguageSelect("dutch")}
           />
-          {this.state.language}
+          <UserSelect />
         </div>
       </div>
     );
